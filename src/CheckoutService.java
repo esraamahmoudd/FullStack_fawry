@@ -13,8 +13,7 @@ public class CheckoutService {
             int available = product.getQuantity();
 
             if (product.isExpired()) {
-                System.out.println( product.getName() + " is expired and was removed from the order.");
-                continue;
+                throw new Exception(product.getName() + " is expired.");
             }
 
             if (needed > available) {
