@@ -29,7 +29,7 @@ public class Main {
     }
 
     static void expired() {
-        System.out.println("==== Expired Product ====");
+        System.out.println("------------Expired Product---------------------------------------");
         try {
             Product cheese = new Product("Cheese 250g", 100, 5, true, true, 0.25);
             Customer customer = new Customer("Esraa", 1000);
